@@ -19,7 +19,8 @@ def juego_adivina_palabra():
 
         if letra in palabra_secreta:
             for i in range(len(palabra_secreta)):
-                progreso[i] = letra
+                if palabra_secreta[i] == letra:
+                  progreso[i] = letra
         else:
             print("Letra incorrecta, intenta de nuevo.")
     
